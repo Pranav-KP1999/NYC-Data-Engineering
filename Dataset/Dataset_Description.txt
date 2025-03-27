@@ -1,0 +1,37 @@
+The New York City Job Dataset presents a rich tapestry of employment opportunities within the city's public sector. 
+It encapsulates an array of roles, qualifications, and application processes, providing a comprehensive view of the 
+diverse careers available to job seekers in the bustling metropolis of New York City.
+There are a total of 30 columns in the dataset and they are listed below:
+
+Job ID: Unique identifier for each job posting
+Agency: The government department or organization offering the job
+Posting Type: Indicates whether the job posting is internal or external
+# Of Positions: Number of positions available for the specific job
+Business Title: Job title used within the organization
+Civil Service Title: Official civil service designation for the role.
+Title Classification: Classification level of the job title
+Title Code No: Numeric code associated with the job title
+Level: Job level within the organization
+Job Category: Category of work the job falls under
+Full-Time/Part-Time indicator: Specifies if the job is full-time or part-time
+Career Level: Experience level required for the position
+Salary Range From: Minimum salary offered for the job
+IntelliPaat
+Salary Range To: Maximum salary offered for the job
+Salary Frequency: Indicates if the salary is provided on an annual basis
+Work Location: Address where the job is based
+Division/Work Unit: Division/Work Unit adds an additional layer of context to
+employment opportunities within the city's public sector
+Job Description: Detailed description of the job responsibilities
+Minimum Qual Requirements: Minimum qualifications required for the job
+Preferred Skills: Skills preferred but not mandatory for the job
+Additional Information: Any additional information about the job
+To Apply: Instructions on how to apply for the position
+Hours/Shift: Working hours and shift details
+Work Location 1: Additional work location information if applicable
+Recruitment Contact: Contact person for recruitment-related inquiries
+Residency Requirement: Information about residency requirements
+Posting Date: Date when the job was posted
+Post Until: Deadline for application submission
+Posting Updated: Date when the job posting was last updated
+Process Date: Date when the hiring process was initiated
