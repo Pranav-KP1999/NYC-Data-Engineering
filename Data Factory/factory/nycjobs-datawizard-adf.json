@@ -1,0 +1,9 @@
+{
+	"name": "nycjobs-datawizard-adf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c3eaba48-219f-41f5-afcc-9a168c780a53",
+		"tenantId": "ec15726e-765c-4f10-9e63-9e1964529582"
+	}
+}
