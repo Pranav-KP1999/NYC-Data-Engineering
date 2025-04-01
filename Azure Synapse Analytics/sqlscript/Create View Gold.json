@@ -1,0 +1,17 @@
+{
+	"name": "Create View Gold",
+	"properties": {
+		"content": {
+			"query": "------------------------\n-- CREATE VIEW NYC Jobs\n------------------------\nCREATE VIEW gold.nyc_jobs\nAS\nSELECT\n    *\nFROM\n    OPENROWSET(\n        BULK 'https://nycjobsadls.dfs.core.windows.net/silver/Dataset/',\n        FORMAT = 'PARQUET'\n    ) AS QUERY1\n\nselect * from gold.nyc_jobs;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "nycjobsdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

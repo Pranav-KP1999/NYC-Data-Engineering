@@ -1,0 +1,17 @@
+{
+	"name": "Create External Table Setup",
+	"properties": {
+		"content": {
+			"query": "--Create a credential\nCREATE DATABASE SCOPED CREDENTIAL credential_nyc\nWITH IDENTITY = 'Managed Identity'\n\n--Create a External Data Source\nCREATE EXTERNAL DATA SOURCE source_silver\nWITH\n(\n    LOCATION = 'https://nycjobsadls.dfs.core.windows.net/silver',\n    CREDENTIAL = credential_nyc\n)\n\nCREATE EXTERNAL DATA SOURCE source_gold\nWITH\n(\n    LOCATION = 'https://nycjobsadls.dfs.core.windows.net/gold',\n    CREDENTIAL = credential_nyc\n)\n\n--Create EXTERNAL FILE FORMAT\nCREATE EXTERNAL FILE FORMAT format_parquet\nWITH\n(\n    FORMAT_TYPE = PARQUET,\n    DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'\n)\n\n--CREATE EXTERNAL TABLE EXTSALES\nCREATE EXTERNAL TABLE gold.ext_nycjobs\nWITH\n(\n    LOCATION = 'ext_nycjobs',\n    DATA_SOURCE = source_gold,\n    FILE_FORMAT = format_parquet\n)AS\nSELECT * FROM gold.nyc_jobs --view\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "nycjobsdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
