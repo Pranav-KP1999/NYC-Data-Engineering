@@ -1,0 +1,9 @@
+{
+	"name": "capstone1-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aba5bf98-d24f-4ece-aa2c-7ca5340e3ee1",
+		"tenantId": "9ec07adc-fd98-44a8-8f94-ec910b4bd4f9"
+	}
+}
